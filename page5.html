@@ -42,46 +42,25 @@
 
 	<!-- offer -->
 	<br>
-	<h1 class="titleC">Account</h1>
-	<div class="hero">
-		<div class="form-box3">
-			<div class="button-box">
-				<div id="buttn"></div>
-				<button type="button" class="toggle-btn" onclick="login()">Login</button>
-				<button type="button" class="toggle-btn" onclick="register()">Register</button>
-			</div>
-			<form id="login" class="input-group">
-				<input type="text" class="input-field" placeholder="User Id" required>
-				<input type="text" class="input-field" placeholder="Enter Password" required>
-				<button type="submit" class="submit-btn">Log In</button>
-			</form>
-
-			<form id="register" class="input-group">
-				<input type="text" class="input-field" placeholder="User Id" required>
-				<input type="email" class="input-field" placeholder="Email Id" required>
-				<input type="text" class="input-field" placeholder="Enter Password" required>
-				<button type="submit" class="submit-btn">Register</button>
+	<div class="container-2 cart-page">	
+		<div class="hero">
+		<div class="form-box2">
+			<h3 class="titleC">Payment Details</h3>
+			<label>Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+			<form class="input-group">
+				<input type="text" class="input-field" placeholder="Name on Card" required>
+				<input type="text" class="input-field" placeholder="Card Number" required>
+				<input type="text" class="input-field" placeholder="Expiry Month" required>
+				<input type="number" class="input-field" placeholder="Expiry Year" required>
+				<button type="submit" class="submit-btn">Check Out</button>
 			</form>
 		</div>
 	</div>
 	<br>
-	<script>
-		var x = document.getElementById("login");
-		var y = document.getElementById("register");
-		var z = document.getElementById("btn");
-
-		function register(){
-			x.style.left = "-400px";
-			y.style.left = "50px";
-			z.style.left = "110px";
-		}
-
-		function login(){
-			x.style.left = "50px";
-			y.style.left = "450px";
-			z.style.left = "0";
-		}
-	</script>
-
 </body>
-</html>  
+</html>
